@@ -1,4 +1,3 @@
-
 var n = 11;
         var center = parseInt(n / 2) ;
         for (let i = 0; i < n; i++) {
@@ -6,7 +5,7 @@ var n = 11;
                 if (j == 0 || i == j && j <= center || j == n-1 - i && j >= center || j == n - 1) {
                     document.write("#");
                 } else {
-                    document.write("_")
+                    document.write("&nbsp&nbsp")
                 }
             }
             document.write("</br>")
