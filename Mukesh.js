@@ -1,0 +1,67 @@
+
+    var n = 11;
+    var center = parseInt(n / 2);
+
+    for (let i = 0; i < n; i++) {
+
+        for (let j = 0; j < n; j++) {
+            if (j == 0 || i == j && j <= center || j == n - 1 - i && j >= center || j == n - 1) {
+                document.write("#");
+            } else {
+                document.write("&nbsp&nbsp")
+            }
+        }
+        document.write("&nbsp&nbsp&nbsp&nbsp&nbsp")
+
+
+        for (let j = 0; j < n; j++) {
+            if (j == 0 || i == n - 1 || j == n - 1) {
+                document.write("#");
+            } else {
+                document.write("&nbsp&nbsp")
+            }
+        }
+        document.write("&nbsp&nbsp&nbsp&nbsp")
+
+
+        for (let j = 0; j < n - center; j++) {
+            if (j == 0 || j == center - i || i == center + j) {
+                document.write("#");
+            } else {
+                document.write("&nbsp&nbsp")
+            }
+        }
+        document.write("&nbsp&nbsp&nbsp&nbsp")
+
+
+        for (let j = 0; j < n; j++) {
+            if (j == 0 || i == center || i == 0 || i == n - 1) {
+                document.write("#");
+            } else {
+                document.write("&nbsp&nbsp")
+            }
+        }
+        document.write("&nbsp&nbsp&nbsp&nbsp")
+
+
+        for (let j = 0; j < n; j++) {
+            if (j == 0 && i < center || i == 0 || i == n - 1 || i == center || j == n - 1 && i > center) {
+                document.write("#");
+            } else {
+                document.write("&nbsp&nbsp")
+            }
+        }
+        document.write("&nbsp&nbsp&nbsp&nbsp")
+
+
+        for (let j = 0; j < n; j++) {
+            if (j == 0 || i == center || j == n - 1) {
+                document.write("#");
+            } else {
+                document.write("&nbsp&nbsp")
+            }
+        }
+        document.write("</br>")
+
+
+    }
